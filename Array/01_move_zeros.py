@@ -1,4 +1,8 @@
+''' LeetCode 283. Move Zeroes '''
+
 nums = [0,1,0,3,12,0,7]
+
+'''Brute Force --> ⚓ '''
 end_zero_at_end =[]
 num_beginning =[]
 
@@ -10,3 +14,5 @@ for i in nums:
 result = num_beginning + end_zero_at_end
 
 print(result)
+
+'''Optimized Solution --> Using 2 pointers '''
