@@ -1,6 +1,6 @@
 ''' LeetCode 169. Majority Element'''
 
-nums = [2,1,1,1]
+'''nums = [2,1,1,1]
 
 count ={}
 def majorityElemnt(nums):
@@ -14,14 +14,8 @@ def majorityElemnt(nums):
         
 # print(majorityElemnt(nums))
 
-
-
-
-
-
-
-
-
+'''
+# Solve 1: Using HashMap 
 
 list1 =[4,4,3,3,4]
 
