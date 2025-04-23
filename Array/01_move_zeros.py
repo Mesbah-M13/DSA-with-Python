@@ -13,6 +13,14 @@ for i in nums:
         num_beginning.append(i)
 result = num_beginning + end_zero_at_end
 
-print(result)
+#print(result)
 
 '''Optimized Solution --> Using 2 pointers '''
+
+l = 0 # left
+for r in range(len(nums)): # r = right
+    if nums[r] != 0:
+        nums[l],nums[r] = nums[r],nums[l]
+        l +=1
+    
+print([nums])
