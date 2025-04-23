@@ -1,22 +1,7 @@
 ''' LeetCode 169. Majority Element'''
-
-'''nums = [2,1,1,1]
-
-count ={}
-def majorityElemnt(nums):
-    for num in nums:
-        count[num] = count.get(num,0) +1 
-        # print(f"Count of each values as key:value",count)
-
-    # for key,value in count.items():
-    #     if value > len(nums)//2:
-    #         return key
-        
-# print(majorityElemnt(nums))
-
-'''
 # Solve 1: Using HashMap 
 
+'''
 list1 =[4,4,3,3,4]
 
 count_elem = {}
@@ -31,3 +16,20 @@ def find_majority_element(nums):
             return key
         
 print(find_majority_element(list1))
+
+'''
+nums = [2,2,1,1,1,2,2,3,3,3,3,3,3]
+
+canditate = nums[0]
+count = 1
+
+for num in nums[1:]:
+    if canditate == num:
+        count += 1
+    else:
+        if count == 0:
+            canditate = num
+            count = 1
+        else:
+            count -= 1
+print(canditate)
