@@ -5,6 +5,7 @@ https://leetcode.com/problems/product-of-array-except-self/description/
 '''
 # Method 1 : 
 
+''' 
 nums = [1,2,3,4]
 
 def productExceptSelf(nums):
@@ -21,9 +22,10 @@ def productExceptSelf(nums):
     return result
 print(productExceptSelf(nums))
 
+'''
 
 # Method 2 : Optimal
-'''
+
 nums = [1,2,3,4]
 
 n= len(nums)
@@ -41,8 +43,8 @@ for num in range(n-1,-1,-1):
 
 print(result)
 
-'''
 
+# Time Complexity: O(n)  & Space Complexity: O(1) 
 
 '''
 range(n-1, -1, -1)
