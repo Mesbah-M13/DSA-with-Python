@@ -4,7 +4,7 @@ https://leetcode.com/problems/rotate-array/description/
 
 '''
 
-#  Method - 1 : Using Slicing for
+# Method - 1 : Using Slicing 
 # nums = [1,2,3,4,5,6,7]
 nums = [-1,-100,3,99]
 k = 2
@@ -14,7 +14,8 @@ k = k % n
 nums[:] = nums[-k:] + nums[:n-k]
 print(nums)
 
-
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 
 
 '''
@@ -44,4 +45,8 @@ def rotate(nums, k):
     print(f"\nFinal rotated array: {nums}\n")
     
 rotate(nums,k)
+
+
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 '''
