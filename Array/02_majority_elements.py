@@ -18,7 +18,7 @@ def find_majority_element(nums):
 print(find_majority_element(list1))
 
 '''
-nums = [2,2,1,1,1,2,2,3,3,3,3,3,3]
+nums = [2,2,1,1,1,2,2]
 
 canditate = nums[0]
 count = 1
